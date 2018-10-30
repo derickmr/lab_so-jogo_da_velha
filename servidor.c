@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define M 3
 
-int verificaPosicao (int i, int j, int matriz[M][M]) {
+int verificaPosicao (int i, int j, int matriz[][]) {
 
 	if (matriz[i][j] != ' ')
 		return 0;
@@ -18,9 +18,18 @@ int verificaPosicao (int i, int j, int matriz[M][M]) {
 
 }
 
-int inicializaMatriz (){
+void inicializaMatriz (int matriz[][]){
 	
-	
+int i;
+int j;
+
+for (i = 0; i<M; i++){
+	for (j = 0; j<M; j++){
+		matriz[i][j] = 0;
+	}
+}
 
 } 
+
+
 
